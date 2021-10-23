@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/* Animaciones */
+@keyframes fadeLogo {
+  0% {
+    opacity: 0; }
+  90% {
+    opacity: 1; } }
+
+/* NORMALIZADOR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* estilo general del cuerpo */
+html {
+  font-size: 62,5%;
+  word-spacing: 0.3em;
+  letter-spacing: 0.03em; }
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background-color: rgba(250, 249, 249, 0.965);
+  margin: 0 0.5rem;
+  padding: 0 1rem;
+  width: 100%;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-areas: "header header" "main aside" "footer footer";
+  grid-template-rows: 45vh auto 13vh;
+  grid-template-columns: 2fr 1fr;
+  row-gap: 2rem;
+  column-gap: 1rem;
+  justify-content: stretch; }
+
+.section {
+  padding-top: 1.5rem;
+  border-top: black;
+  border-top-width: 0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-style: solid;
+  box-sizing: border-box;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  grid-area: main; }
+
+iframe {
+  width: 18vw;
+  height: 18vh;
+  min-height: 12vh;
+  min-width: 12vw;
+  margin-top: 0.6rem;
+  margin-left: 0.6rem;
+  border-radius: 3px;
+  float: right; }
+
+@media only screen and (max-width: 1400px) {
+  body {
+    grid-template-areas: "header header" "main main" "aside aside" "footer footer";
+    grid-template-rows: 50vh auto auto 13vh;
+    justify-content: stretch; }
+  iframe {
+    width: 28vw; } }
+
+@media only screen and (max-width: 991px) {
+  body {
+    grid-template-areas: "header" "main" "aside" "footer";
+    grid-template-columns: none;
+    grid-template-rows: 25vh auto auto 13vh; } }
+
+@media only screen and (max-width: 767px) {
+  main {
+    display: initial !important;
+    overflow-x: auto; }
+  .indexImage2, .section__indexArticle .picture2Index {
+    height: 30vh; }
+  iframe {
+    width: 96%;
+    height: 30vh;
+    float: none; } }
+
+/* formato sidebar contratos destacados*/
+.sidebar {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 3px;
+  grid-area: aside;
+  grid-row-end: 3;
+  margin-top: 4rem;
+  position: sticky;
+  top: 1rem;
+  z-index: 1;
+  height: 80%; }
+  .sidebar h3 {
+    color: #1B7340;
+    font-weight: bold;
+    text-align: center; }
+  .sidebar:hover {
+    background-color: #D6F5D5;
+    transform: scale(1.1, 1.1); }
+  .sidebar div dl dt a {
+    text-decoration: none;
+    color: #1B7340;
+    font-weight: bold; }
+  .sidebar .conDest {
+    padding: 1rem; }
+    .sidebar .conDest dt {
+      padding: 0.5rem; }
+
+.tituloForm {
+  color: #1B7340;
+  margin-bottom: 1.5rem; }
+
+.segundoForm {
+  color: #1B7340; }
+
+.elemento {
+  width: 100%; }
+
+.submitForm {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem; }
+  .submitForm .submitButton1 {
+    flex-direction: row; }
+
+.sidebarDestacados {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem; }
+
+aside .containerArticle1 {
+  background-color: white;
+  border-radius: 0.3rem;
+  border: grey;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 1rem 1.5rem grey; }
+  aside .containerArticle1 article {
+    flex: 0 0 auto;
+    width: 66.66%;
+    text-align: justify;
+    padding: 0.5rem; }
+  aside .containerArticle1 .imgAside1 {
+    background-image: url(../public/1cf68b1cbe3e29e7dcbbb2a53abd8.webp);
+    flex: 0 0 auto;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: o 0.3rem; }
+
+aside .containerArticle3 {
+  background-color: white;
+  border-radius: 0.3rem;
+  border: grey;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 1rem 1.5rem grey; }
+  aside .containerArticle3 article {
+    flex: 0 0 auto;
+    width: 66.66%;
+    text-align: justify;
+    padding: 0.5rem; }
+  aside .containerArticle3 .imgAside3 {
+    background-image: url(../public/agd_empresa_agd.webp);
+    flex: 0 0 auto;
+    width: 33.33%;
+    background-size: cover;
+    border-radius: 0.5rem;
+    overflow: hidden; }
+
+@media only screen and (max-width: 1400px) {
+  .sidebar:hover {
+    transform: none;
+    background-color: whitesmoke; }
+  .sidebarDestacados {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem; }
+  aside .containerArticle1 {
+    overflow: scroll; }
+    aside .containerArticle1 .imgAside1 {
+      height: 100%;
+      background-size: 80%;
+      background-repeat: no-repeat; }
+  aside .containerArticle3 {
+    overflow: scroll; }
+    aside .containerArticle3 .imgAside3 {
+      height: 100%;
+      background-size: 80%;
+      background-repeat: no-repeat; } }
+
+@media only screen and (max-width: 991px) {
+  .sidebarDestacados {
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem; }
+  aside .containerArticle1 article {
+    width: 79%; }
+  aside .containerArticle1 .imgAside1 {
+    background-size: contain;
+    width: 20%; }
+  aside .containerArticle3 article {
+    width: 79%; }
+  aside .containerArticle3 .imgAside3 {
+    background-size: 80%;
+    width: 20%; } }
+
+/* Header, logo y navBar */
+header {
+  background-image: url(../MULTIMEDIA/Reduce-reuse-recycle-e1531902642428.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  box-sizing: border-box;
+  border-radius: 0.3rem;
+  grid-area: header;
+  position: relative; }
+  header .d-block {
+    height: 25rem; }
+  header .header__dataDiv__dataTable {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    background-image: linear-gradient(to bottom, #1b7340, #2e7f4c, #3f8b58, #4f9765, #5ea372, #6eae7e, #7db88a, #8cc397, #9fcfa6, #b1dcb5, #c4e8c5, #d6f5d5);
+    color: whitesmoke;
+    height: 3.5rem; }
+  header .header__logo {
+    position: absolute;
+    top: 4rem; }
+    header .header__logo picture img {
+      width: 50%;
+      margin-top: 3.8rem;
+      margin-left: 2rem;
+      border-radius: 50%;
+      animation-duration: 2s;
+      animation-name: fadeLogo; }
+  header .headerImg {
+    position: relative;
+    display: inline-block; }
+  header .sobretext {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #1B7340;
+    max-width: 50%;
+    max-height: 80%;
+    width: 400px;
+    height: 160px;
+    text-align: center;
+    background: rgba(245, 245, 245, 0.5);
+    padding: 1rem;
+    border-radius: 0.2rem;
+    align-content: center;
+    justify-content: center;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5); }
+
+/*NavBar*/
+.divNavBar {
+  margin-top: -0.5rem; }
+
+.navbar {
+  background-color: #1B7340 !important; }
+  .navbar div div ul li a {
+    color: whitesmoke !important;
+    font-size: 1.3em !important; }
+    .navbar div div ul li a:hover {
+      background-color: #72B384; }
+  .navbar .dropdown-menu {
+    background-color: #1B7340 !important; }
+
+@media only screen and (max-width: 991px) {
+  header {
+    background-image: url(../public/logo2.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+    header .header__dataDiv {
+      visibility: collapse; }
+    header .header__carousel {
+      display: none; }
+    header .header__logo picture a img {
+      display: none; }
+    header .divNavBar {
+      margin-top: 14rem; } }
+
+/* Footer */
+footer {
+  background-color: #1B7340;
+  grid-area: footer;
+  box-sizing: border-box;
+  z-index: 2; }
+  footer .contactoLink {
+    margin-left: 2rem;
+    padding-top: 3rem; }
+    footer .contactoLink a {
+      color: white;
+      text-decoration: none; }
+  footer .rrss {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: scale(2, 2);
+    margin-top: 4.5rem;
+    padding-bottom: 2rem; }
+    footer .rrss div {
+      flex-direction: row; }
+      footer .rrss div a {
+        color: whitesmoke;
+        padding: 1rem; }
+
+/* INDEX */
+/* Sección principal */
+main {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-areas: "A F 1" "B G 2" "C H 3" "D I 4";
+  row-gap: 0.5rem;
+  column-gap: 1rem;
+  justify-content: stretch;
+  grid-template-rows: 1fr auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr; }
+  main .article1 {
+    grid-column-start: 1;
+    grid-column-end: 4; }
+  main .article2 {
+    grid-column-start: 2;
+    grid-column-end: 4; }
+  main .article3 {
+    grid-column-start: 1;
+    grid-column-end: 3; }
+
+.section__indexArticle {
+  font-size: 1em;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  box-sizing: border-box; }
+  .section__indexArticle h2 {
+    font-size: 1.5em;
+    color: #1B7340; }
+  .section__indexArticle .textoArticulo {
+    margin-bottom: 0.5rem;
+    line-height: 2.5em;
+    text-align: justify;
+    display: inline-block;
+    width: 100%; }
+  .section__indexArticle .picture2Index {
+    margin-right: 1.5rem; }
+  .section__indexArticle picture img {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 3px;
+    max-width: 400px;
+    box-sizing: border-box; }
+
+.indexImage2, .section__indexArticle .picture2Index {
+  background-image: url(../public/istockphoto-187115608-2048x2048_adobespark.webp);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-top: 1rem;
+  padding: 1rem; }
+
+/* RESPONSIVE */
+/* NOSOTROS */
+/* Mision, Vision, Valores */
+.nosotros {
+  grid-column-start: 1;
+  grid-column-end: 3; }
+  .nosotros h2 {
+    color: #1B7340;
+    font-size: 1.5em;
+    margin: 1em; }
+  .nosotros p {
+    line-height: 2rem;
+    padding: 1rem;
+    text-align: justify; }
+
+.firstArticleImg {
+  background-image: url(../public/33088494-primer-plano-de-un-apretón-de-manos-de-negocios-la-gente-de-negocios-apretón-de-manos-hasta-terminar.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-top: 2rem; }
+
+.nosotros2 {
+  grid-column-start: 2;
+  grid-column-end: 4; }
+  .nosotros2 h2 {
+    color: #1B7340;
+    font-size: 1.5em;
+    margin: 1em; }
+  .nosotros2 p {
+    line-height: 2rem;
+    padding: 1rem;
+    text-align: justify; }
+  .nosotros2 picture img {
+    max-width: 400px;
+    margin-top: 7rem; }
+
+.secondArticleImg {
+  background-image: url(../public/Inversiones-Verdes-y-Sostenibles.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-top: 2rem; }
+
+.thirdArticleImg {
+  background-image: url(../public/beneficios-trabajo-en-equipo1.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: scroll;
+  background-size: cover;
+  margin-top: 2rem; }
+
+/* RESPONSIVE */
+@media only screen and (max-width: 767px) {
+  .secondArticleImg {
+    height: 40vh; }
+  .thirdArticleImg {
+    height: 40vh; } }
+
+main article {
+  grid-column-start: 1;
+  grid-column-end: 4; }
+  main article p {
+    text-align: justify; }
+  main article .tituloComprar {
+    font-size: 1.5em;
+    margin: 0.5rem; }
+
+.articuloComprar p {
+  line-height: 2em; }
+
+.tablaCompradores th {
+  color: #1B7340;
+  font-weight: bold;
+  padding: 1rem; }
+
+/* VENDER */
+/* Info de la sección y avisos de venta */
+.titulos {
+  color: #1B7340;
+  margin: 0.5rem;
+  font-size: 1.5em; }
+
+.articuloVender p {
+  line-height: 2rem; }
+
+.tableGeneric {
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  border-collapse: collapse;
+  border: #1B7340 3px solid;
+  background-color: #D6F5D5; }
+
+.avisosVenta {
+  color: #1B7340;
+  font-size: 1.5em;
+  margin-bottom: 1.5rem; }
+
+article table {
+  border-radius: 0.3rem; }
+
+.tablaVendedores th {
+  color: #1B7340;
+  font-weight: bold;
+  padding: 1rem; }
+
+article table tr td {
+  padding: 1rem; }
+
+.formularioContacto {
+  color: #1B7340;
+  margin: 10px; }
+
+main article form div {
+  margin: 10px; }
+
+.consultaForm {
+  color: #1B7340; }
+
+/* 404 */
+.notFound {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  margin: 2rem;
+  justify-content: cent;
+  align-items: center; }
+  .notFound div {
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .notFound div h1 {
+      font-size: 2em;
+      color: #1B7340; }
+    .notFound div p {
+      font-size: 1.4em;
+      color: #72B384; }
+    .notFound div button {
+      border-radius: 10px;
+      background-color: #72B384;
+      color: #1B7340;
+      padding: 0.5rem; }
+      .notFound div button:hover {
+        background-color: #D6F5D5;
+        animation-delay: 1s;
+        border-radius: 10px; }
+      .notFound div button a {
+        color: #1B7340;
+        font-size: 1.1em;
+        padding: 0.5rem;
+        text-decoration: none;
+        font-weight: bold; }

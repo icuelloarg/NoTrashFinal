@@ -1,0 +1,35 @@
+/* Footer */
+footer
+{
+    background-color: $primary;
+    grid-area: footer;
+    box-sizing: border-box;
+    z-index: 2;
+    .contactoLink  
+    {
+        margin-left: 2rem;
+        padding-top: 3rem;
+            & a 
+            {
+                color: white;
+                text-decoration: none;
+            }
+    
+    }
+    .rrss
+    {   
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        transform: scale(2,2);
+        margin-top: 4.5rem;
+        padding-bottom: 2rem;
+         div {
+            flex-direction: row;
+            & a {
+                color: $back-letter;
+                padding: 1rem;
+            }
+        }   
+    }  
+}

@@ -1,0 +1,114 @@
+/* Header, logo y navBar */
+
+header
+{
+    background-image: url(../MULTIMEDIA/Reduce-reuse-recycle-e1531902642428.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+    grid-area: header;
+    position: relative;
+
+        .d-block
+        {
+            height: 25rem;;
+        }
+
+        .header__dataDiv__dataTable
+        /* Estilo de tabla de datos generales presente en header */
+        {
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            font-size: 1.5em;
+            background-image: linear-gradient(to bottom, #1b7340, #2e7f4c, #3f8b58, #4f9765, #5ea372, #6eae7e, #7db88a, #8cc397, #9fcfa6, #b1dcb5, #c4e8c5, #d6f5d5);
+            color: whitesmoke;
+            height: 3.5rem;
+        }
+        .header__logo
+        {
+            position: absolute; top: 4rem;
+                & picture img 
+                {
+                    width: 50%;
+                    margin-top: 3.8rem;
+                    margin-left: 2rem;
+                    border-radius: 50%;
+                    animation-duration: 2s;
+                    animation-name: fadeLogo;
+                }
+        }  
+        .headerImg {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .sobretext {
+            position: absolute;
+            top: 30%;
+            right: 10%;
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: $primary;
+            max-width: 50%;
+            max-height: 80%;
+            width: 400px;
+            height: 160px;
+            text-align: center;
+            background: rgba(245,245,245,0.5);
+            padding: 1rem;
+            border-radius: 0.2rem;
+            align-content: center;
+            justify-content: center;
+            box-shadow: 0 2rem 2rem rgba(0,0,0,0.5);
+        
+        }
+}
+/*NavBar*/
+
+.divNavBar {
+    margin-top: -0.5rem;
+}
+
+.navbar
+{
+    background-color: $primary !important; 
+        & div div ul li a 
+        {
+            color: $back-letter !important;
+            font-size: 1.3em !important;
+                &:hover
+                {
+                    background-color: $secondgradient;
+                }
+        }
+        .dropdown-menu
+        {
+            background-color: $primary !important;
+        }
+}
+
+
+@media only screen and (max-width: 991px){
+    header {
+        background-image: url(../public/logo2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .header__dataDiv{
+            visibility: collapse;
+        }
+        .header__carousel{
+            display: none;
+        }
+        .header__logo picture a img {
+            display: none;
+        }
+        .divNavBar{
+            margin-top: 14rem;
+        }
+    }
+
+
+}

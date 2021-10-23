@@ -1,0 +1,50 @@
+/* VENDER */
+
+/* Info de la sección y avisos de venta */
+
+.titulos {
+
+    color: $primary;
+    margin: 0.5rem;
+    font-size: 1.5em;
+}
+
+.articuloVender p {
+
+    line-height: 2rem;
+}
+
+.tableGeneric{
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    border-collapse: collapse;
+    border: $primary 3px solid;
+    background-color: $secondary;
+}
+
+
+
+.avisosVenta    {
+
+    color: $primary;
+    font-size: 1.5em;
+    margin-bottom: 1.5rem;
+}
+
+article table {
+
+    border-radius: 0.3rem;
+}
+
+.tablaVendedores th {
+
+    color: $primary;
+    font-weight: bold;
+    padding: 1rem;
+}    
+
+article table tr td {
+
+ padding: 1rem;
+
+}
