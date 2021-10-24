@@ -10,7 +10,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-wrap: anywhere; }
+
+@media only screen and (max-width: 991px) {
+  margin: 0 !important; }
 
 /* estilo general del cuerpo */
 html {
@@ -71,7 +75,8 @@ iframe {
   body {
     grid-template-areas: "header" "main" "aside" "footer";
     grid-template-columns: none;
-    grid-template-rows: auto auto auto auto; } }
+    grid-template-rows: 18.2rem auto auto auto;
+    margin: 0 !important; } }
 
 @media only screen and (max-width: 767px) {
   main {
@@ -279,15 +284,19 @@ header {
   header {
     background-image: url(../public/logo2.png);
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: center; }
     header .header__dataDiv {
       visibility: collapse; }
     header .header__carousel {
       display: none; }
     header .header__logo picture a img {
       display: none; }
-    header .divNavBar {
-      margin-top: 14rem; } }
+    header .divNavBar nav {
+      display: inline-block;
+      margin-left: 2rem;
+      margin-top: 1rem;
+      transform: scale(1.15); } }
 
 /* Footer */
 footer {

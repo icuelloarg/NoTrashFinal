@@ -96,6 +96,7 @@ header
         background-image: url(../public/logo2.png);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
         .header__dataDiv{
             visibility: collapse;
         }
@@ -105,8 +106,11 @@ header
         .header__logo picture a img {
             display: none;
         }
-        .divNavBar{
-            margin-top: 14rem;
+        .divNavBar nav{
+            display: inline-block;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            transform: scale(1.15);
         }
     }
 
