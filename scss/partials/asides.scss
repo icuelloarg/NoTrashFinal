@@ -7,7 +7,6 @@
     border-radius: $borderRadius - 7px;
     grid-area: aside;
     grid-row-end: 3;
-    margin-top: 4rem;
     position: sticky;
     top: 1rem;
     z-index: 1;
@@ -20,7 +19,6 @@
     }
     &:hover{
         background-color: $secondary;
-        transform: scale(1.1,1.1);
     }
     & div dl dt a {
 
