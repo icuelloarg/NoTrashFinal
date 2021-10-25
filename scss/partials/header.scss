@@ -106,11 +106,16 @@ header
         .header__logo picture a img {
             display: none;
         }
-        .divNavBar nav{
-            display: inline-block;
-            margin-left: 2rem;
-            margin-top: 1rem;
-            transform: scale(1.15);
+        .divNavBar {
+            -webkit-margin-top-collapse: initial;
+            
+            & nav{
+                border-radius: 0.3rem;
+                display: inline-block;
+                margin-left: 1rem;
+                margin-top: 1rem;
+                transform: scale(1.15);
+            }
         }
     }
 
