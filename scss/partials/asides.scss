@@ -137,6 +137,7 @@ aside {
 @media only screen and (max-width: 1400px){
     .sidebar{
         height: 100%;
+        position: static;
         &:hover{
             transform: none;
             background-color: $back-letter;
