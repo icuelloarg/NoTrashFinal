@@ -111,8 +111,7 @@ header
             display: inline-block;
             margin-left: 2rem;
             margin-top: 1rem;
-            -webkit-margin-start: initial;
-            -webkit-margin-top-collapse: initial;
+            -webkit-margin-top-collapse: -2rem;
             transform: scale(1.15);
         }
     }
