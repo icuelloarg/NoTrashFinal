@@ -4,7 +4,6 @@ footer
     background-color: $primary;
     grid-area: footer;
     box-sizing: border-box;
-    z-index: 2;
     .contactoLink  
     {
         margin-left: 2rem;
@@ -21,11 +20,11 @@ footer
         display: flex;
         justify-content: center;
         align-content: center;
-        transform: scale(2,2);
-        margin-top: 4.5rem;
+        margin-top: 2.5rem;
         padding-bottom: 2rem;
          div {
             flex-direction: row;
+            transform: scale(2);
             & a {
                 color: $back-letter;
                 padding: 1rem;

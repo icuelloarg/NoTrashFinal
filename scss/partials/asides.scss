@@ -9,8 +9,7 @@
     grid-row-end: 3;
     position: sticky;
     top: 1rem;
-    z-index: 1;
-    height: 80%;
+    height: 85%;
     & h3
     {
         color: $primary;
@@ -115,10 +114,29 @@ aside {
     }  
 }
 
+// Sidebar Index
+
+.sidebarIndex {
+    height: 70%;
+}
+
+// Sidebar About
+
+.sidebarAbout {
+    height: 60%;
+}
+
+// Sidebar sección Contacto
+
+.sidebarContact {
+    height: 100%;
+}
+
 
 
 @media only screen and (max-width: 1400px){
     .sidebar{
+        height: 100%;
         &:hover{
             transform: none;
             background-color: $back-letter;
@@ -129,6 +147,9 @@ aside {
         display: flex;
         flex-direction: row;
         column-gap: 1rem;
+        & div h3 {
+            visibility: collapse;
+        }
     }
     aside .containerArticle1 {
         overflow: scroll;
@@ -154,6 +175,9 @@ aside {
         display: flex;
         flex-direction: column;
         column-gap: 1rem;
+        & div h3 {
+            visibility: visible;
+        }
     }
 
     aside .containerArticle1 {
