@@ -79,6 +79,7 @@ header
         {
             color: $back-letter !important;
             font-size: 1.3em !important;
+            padding-left: 0.5rem !important;
                 &:hover
                 {
                     background-color: $secondgradient;
@@ -97,7 +98,6 @@ header
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        overflow: hidden;
         .header__dataDiv{
             visibility: collapse;
         }
@@ -107,14 +107,19 @@ header
         .header__logo picture a img {
             display: none;
         }
-        .divNavBar nav{
-            display: inline-block;
-            margin-left: 2rem;
-            margin-top: 1rem;
-            -webkit-margin-start: auto;
-            -webkit-margin-top-collapse: initial;
-            transform: scale(1.15);
-        }
+        .divNavBar{
+            margin-left: 0.5rem;
+            margin-top: 0.4rem;            
+            & nav{
+                border-radius: 0.3rem;
+                display: inline-block;
+                margin-left: 2rem;
+                margin-top: 1rem;
+                -webkit-margin-start: auto;
+                -webkit-margin-top-collapse: initial;
+                transform: scale(1.15);
+            }
+        } 
     }
 
 

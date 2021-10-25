@@ -291,7 +291,8 @@ header {
   background-color: #1B7340 !important; }
   .navbar div div ul li a {
     color: whitesmoke !important;
-    font-size: 1.3em !important; }
+    font-size: 1.3em !important;
+    padding-left: 0.5rem !important; }
     .navbar div div ul li a:hover {
       background-color: #72B384; }
   .navbar .dropdown-menu {
@@ -302,21 +303,24 @@ header {
     background-image: url(../public/logo2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    overflow: hidden; }
+    background-position: center; }
     header .header__dataDiv {
       visibility: collapse; }
     header .header__carousel {
       display: none; }
     header .header__logo picture a img {
       display: none; }
-    header .divNavBar nav {
-      display: inline-block;
-      margin-left: 2rem;
-      margin-top: 1rem;
-      -webkit-margin-start: auto;
-      -webkit-margin-top-collapse: initial;
-      transform: scale(1.15); } }
+    header .divNavBar {
+      margin-left: 0.5rem;
+      margin-top: 0.4rem; }
+      header .divNavBar nav {
+        border-radius: 0.3rem;
+        display: inline-block;
+        margin-left: 2rem;
+        margin-top: 1rem;
+        -webkit-margin-start: auto;
+        -webkit-margin-top-collapse: initial;
+        transform: scale(1.15); } }
 
 /* Footer */
 footer {
