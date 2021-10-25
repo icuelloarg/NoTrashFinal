@@ -310,7 +310,8 @@ header {
     header .header__logo picture a img {
       display: none; }
     header .divNavBar {
-      -webkit-margin-top-collapse: initial; }
+      -webkit-margin-top-collapse: initial;
+      -webkit-margin-top: none; }
       header .divNavBar nav {
         border-radius: 0.3rem;
         display: inline-block;

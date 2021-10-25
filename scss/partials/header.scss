@@ -108,6 +108,7 @@ header
         }
         .divNavBar {
             -webkit-margin-top-collapse: initial;
+            -webkit-margin-top: none;
             
             & nav{
                 border-radius: 0.3rem;
