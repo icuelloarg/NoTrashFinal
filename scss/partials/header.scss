@@ -97,7 +97,6 @@ header
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        overflow: hidden;
         .header__dataDiv{
             visibility: collapse;
         }
@@ -111,7 +110,6 @@ header
             display: inline-block;
             margin-left: 2rem;
             margin-top: 1rem;
-            -webkit-margin-top-collapse: -2rem;
             transform: scale(1.15);
         }
     }
