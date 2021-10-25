@@ -148,12 +148,13 @@ aside {
         display: flex;
         flex-direction: row;
         column-gap: 1rem;
-        & div h3 {
+        & .titleDestacados {
             visibility: collapse;
+            display: none;
         }
     }
     aside .containerArticle1 {
-        overflow: scroll;
+        overflow-wrap: initial;
             .imgAside1 {
             height: 100%;
             background-size: 80%;
@@ -162,7 +163,7 @@ aside {
     }
 
     aside .containerArticle3{
-        overflow: scroll;
+        overflow-wrap: initial;
         .imgAside3{
             height: 100%;
             background-size: 80%;
@@ -176,8 +177,9 @@ aside {
         display: flex;
         flex-direction: column;
         column-gap: 1rem;
-        & div h3 {
+        & .titleDestacados {
             visibility: visible;
+            display: initial;
         }
     }
 
