@@ -302,7 +302,8 @@ header {
     background-image: url(../public/logo2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    overflow: hidden; }
     header .header__dataDiv {
       visibility: collapse; }
     header .header__carousel {
@@ -313,6 +314,8 @@ header {
       display: inline-block;
       margin-left: 2rem;
       margin-top: 1rem;
+      -webkit-margin-start: auto;
+      -webkit-margin-top-collapse: initial;
       transform: scale(1.15); } }
 
 /* Footer */
